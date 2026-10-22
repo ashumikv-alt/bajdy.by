@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кемпинговый набор «Всё включено» — Подробное описание | Bajdy.by</title>
+    <style>
+        body { 
+            background-color: #0b111e; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-image: linear-gradient(to bottom, rgba(11, 17, 30, 0.4), rgba(11, 17, 30, 0.55)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        .header { 
+            background-color: #050810; 
+            border-bottom: 2px solid #f97316; 
+            padding: 20px 0; 
+        }
+        .header-box { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .logo { 
+            font-size: 26px; 
+            font-weight: bold; 
+            color: #34d399; 
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        .logo span { color: #f97316; }
+        .header-contacts { display: flex; align-items: center; gap: 15px; }
+        .phone { 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #ffffff; 
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .phone:hover { color: #34d399; }
+        .instagram-link { display: flex; align-items: center; justify-content: center; text-decoration: none; transition: transform 0.2s ease; }
+        .instagram-link svg { width: 22px; height: 22px; fill: url(#insta-radial); }
+        .instagram-link:hover { transform: scale(1.08); }
+
+        .main-content { padding: 60px 0; }
+        
+        .content-layout {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+        .text-column {
+            flex: 1;
+            text-align: left;
+        }
+        .photo-column {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-shrink: 0;
+        }
+        
+        h1 { font-size: 44px; color: #ffffff; margin-top: 0; margin-bottom: 10px; font-weight: 900; letter-spacing: -1px; }
+        .price-tag { font-size: 24px; color: #f97316; font-weight: bold; margin-bottom: 35px; }
+        
+        .photo-placeholder { 
+            background: rgba(17, 24, 39, 0.75); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            border-radius: 12px; 
+            width: 100%;
+            height: 260px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #94a3b8;
+            font-size: 14px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .photo-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+        
+        p { color: #cbd5e1; line-height: 1.7; font-size: 17px; margin-bottom: 25px; }
+        h2 { color: #34d399; font-size: 22px; margin-top: 35px; margin-bottom: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        ul { padding-left: 20px; margin-bottom: 30px; }
+        li { color: #cbd5e1; line-height: 1.6; margin-bottom: 10px; font-size: 15px; }
+        
+        .order-btn { display: inline-block; background: linear-gradient(135deg, #10b981, #f97316); color: #050810; padding: 16px 45px; font-weight: bold; font-size: 18px; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 15px rgba(249, 115, 22, 0.2); margin-top: 15px; }
+        .order-btn:hover { filter: brightness(1.1); }
+
+        @media (max-width: 900px) {
+            .content-layout { flex-direction: column; gap: 40px; }
+            .photo-column { width: 100%; flex-direction: row; }
+            .photo-placeholder { width: calc(50% - 10px); height: 220px; }
+            .text-column { text-align: center; }
+        }
+        @media (max-width: 600px) {
+            .photo-column { flex-direction: column; }
+            .photo-placeholder { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-box">
+            <a href="index.html" class="logo">BAJDY<span>.BY</span></a>
+            <div class="header-contacts">
+                <a href="tel:+375297114224" class="phone">+375 (29) 711-42-24</a>
+                <a href="https://instagram.com" target="_blank" class="instagram-link" aria-label="Мы в Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://w3.org">
+                        <defs>
+                            <radialGradient id="insta-radial" cx="30%" cy="100%" r="150%">
+                                <stop offset="0%" stop-color="#fdf497" />
+                                <stop offset="5%" stop-color="#fdf497" />
+                                <stop offset="45%" stop-color="#fd5949" />
+                                <stop offset="60%" stop-color="#d6249f" />
+                                <stop offset="90%" stop-color="#285AEB" />
+                            </radialGradient>
+                        </defs>
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <div class="text-column">
+                    <h1>Кемпинговый набор «Всё включено»</h1>
+                    <div class="price-tag">Стоимость аренды: от 120 BYN</div>
+
+                    <h2>Готовое решение для ночевки</h2>
+                    <p>Вам больше не нужно тратить время на поиск, покупку и сборку туристического снаряжения по отдельности для многодневного сплава или просто выходных в лесу. Мы собрали полноценный комплект профессионального оборудования «под ключ».</p>
+                    
+                    <h2>Что входит в комплект набора</h2>
+                    <ul>
+                        <li><strong>Двухслойная палатка:</strong> Современная ветро- и влагозащитная палатка (на 2-3 человека).</li>
+                        <li><strong>Теплые спальные мешки:</strong> Чистые спальники под температурный режим сезона.</li>
+                        <li><strong>Мягкие коврики (карематы):</strong> Плотные теплоизоляционные маты.</li>
+                        <li><strong>Костровое снаряжение:</strong> Котелок для походной каши/супа, тренога и половник.</li>
+                        <li><strong>Базовый набор посуды:</strong> Комплект небьющихся тарелок и приборов.</li>
+                        <li><strong>Приятные мелочи:</strong> Туристический топор или пила, розжиг и спички.</li>
+                    </ul>
+
+                    <a href="index.html#booking" class="order-btn">Забронировать набор</a>
+                </div>
+                
+                <div class="photo-column">
+                    <div class="photo-placeholder"><img src="camping1.jpg" alt="Кемпинг фото 1" onerror="this.style.display='none'; this.parentNode.innerText='Место для фото 1';"></div>
+                    <div class="photo-placeholder"><img src="camping2.jpg" alt="Кемпинг фото 2" onerror="this.style.display='none'; this.parentNode.innerText='Место для фото 2';"></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
